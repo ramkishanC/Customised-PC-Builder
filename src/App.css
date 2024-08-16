@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light background for the whole app */
+}
+
+.content {
+  min-height: calc(100vh - 60px); /* Adjust content area height to account for footer height */
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light background for the whole app */
+}
+
+html, body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.content {
+  flex: 1; /* Takes up remaining space to push footer to the bottom */
+  padding: 60px 15px 60px; /* Adjust padding to account for fixed Navbar and Footer */
+}
